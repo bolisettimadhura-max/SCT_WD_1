@@ -118,3 +118,31 @@ button:hover{
     color:#444;
     line-height:1.6;
 }
+.contact{
+    background:#ffffff;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.contact h2{
+    font-size:35px;
+    margin-bottom:25px;
+    color:#764ba2;
+}
+
+.contact input,
+.contact textarea{
+    width:60%;
+    padding:15px;
+    margin:10px 0;
+    border:none;
+    border-radius:10px;
+    outline:none;
+    background:#f1f1f1;
+    font-size:16px;
+}
+
+.contact textarea{
+    height:120px;
+    resize:none;
+}
