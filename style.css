@@ -2,56 +2,75 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial;
 }
 
-body{
+html{
     scroll-behavior:smooth;
 }
 
-#navbar{
+body{
+    font-family:Arial,sans-serif;
+}
+
+nav{
     position:fixed;
-    top:0;
     width:100%;
-    background:black;
-    padding:20px;
-    transition:0.3s;
-}
-
-#navbar ul{
+    top:0;
+    left:0;
     display:flex;
-    justify-content:center;
-    list-style:none;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+    background:transparent;
+    transition:0.4s;
+    z-index:1000;
 }
 
-#navbar ul li{
-    margin:0 20px;
+nav.scrolled{
+    background:#111;
+    box-shadow:0 2px 10px rgba(0,0,0,0.3);
 }
 
-#navbar ul li a{
+.logo{
     color:white;
+    font-size:24px;
+    font-weight:bold;
+}
+
+ul{
+    list-style:none;
+    display:flex;
+}
+
+ul li{
+    margin-left:25px;
+}
+
+ul li a{
     text-decoration:none;
+    color:white;
     font-size:18px;
     transition:0.3s;
 }
 
-#navbar ul li a:hover{
+ul li a:hover{
     color:yellow;
 }
 
 .hero{
     height:100vh;
+    background:linear-gradient(to right,#4facfe,#00f2fe);
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    background:linear-gradient(to right, #74ebd5, #ACB6E5);
     text-align:center;
+    color:white;
 }
 
 .hero h1{
-    font-size:50px;
-    margin-bottom:20px;
+    font-size:55px;
+    margin-bottom:10px;
 }
 
 .hero p{
@@ -60,25 +79,24 @@ body{
 }
 
 button{
-    padding:12px 25px;
+    padding:12px 28px;
     border:none;
-    background:black;
-    color:white;
+    border-radius:25px;
+    background:white;
+    color:#0077ff;
     font-size:18px;
-    border-radius:5px;
     cursor:pointer;
+    transition:0.3s;
 }
 
 button:hover{
-    background:blue;
+    background:#0077ff;
+    color:white;
 }
 
 .content{
-    padding:100px 40px;
+    height:100vh;
+    padding:120px 50px;
+    background:#f4f4f4;
     text-align:center;
-}
-
-.content h2{
-    margin-bottom:20px;
-    font-size:35px;
 }
